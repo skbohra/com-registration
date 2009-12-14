@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>events</name>
+	<creationDate>September 2009</creationDate>
+	<author>Shree Kant Bohra</author>
+	<authorEmail>skbohra123@gmail.com</authorEmail>
+	<authorUrl>http://www.geekybuddha.org</authorUrl>
+	<copyright>(C) 2009 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.5.14</version>
+
+	  <description>
+</description> 
+
+
+	<!-- Site Main File Copy Section-->
+	<files>
+	<filename>COPYING</filename>
+	<filename>controllers/events.php</filename>
+	<filename>events.php</filename>
+	<filename>index.html</filename>
+	<filename>models/events.php</filename>
+	<filename>models/index.html</filename>
+	<filename>views/index.html</filename>
+	<filename>views/events/index.html</filename>
+	<filename>views/events/view.php</filename>
+	<filename>views/events/tmpl/default.php</filename>
+	<filename>views/events/tmpl/lists.php</filename>
+	<filename>views/events/tmpl/myevents.php</filename>
+	<filename>views/events/tmpl/register.php</filename>
+	<filename>views/events/tmpl/registration.php</filename>
+	<filename>views/events/tmpl/submit.php</filename>
+	<filename>views/events/tmpl/index.html</filename>
+	</files>
+	 
+	
+	
+	
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu>Event Registration</menu>
+		<submenu>
+			<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+			<menu link="option=com_events&amp;task=view">View Participants</menu>
+			<menu link="option=com_events&amp;task=addevent">Add Event</menu>
+		</submenu>
+		
+		<!-- Administration Main File Copy Section -->
+		
+		
+		</administration>
+</install>
