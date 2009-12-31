@@ -117,6 +117,20 @@
 		
 		<!-- Administration Main File Copy Section -->
 		
-		
+		  <files folder="admin">
+          <filename>events.php</filename> 
+          <filename>index.html</filename> 
+          <filename>controller.php</filename> 
+          <filename>models/events.php</filename> 
+          <filename>models/index.html</filename> 
+          <filename>views/index.html</filename> 
+          <filename>views/events/index.html</filename> 
+          <filename>views/events/view.html.php</filename> 
+          <filename>views/events/tmpl/index.html</filename> 
+          <filename>views/events/tmpl/default.php</filename> 
+          <filename>views/events/tmpl/addevent.php</filename> 
+          </files>
+          
+
 		</administration>
 </install>
