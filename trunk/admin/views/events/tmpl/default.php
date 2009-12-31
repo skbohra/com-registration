@@ -11,31 +11,40 @@
 				<input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count( $this->items ); ?>);" />
 			</th>			
 			<th>
-				<?php echo JText::_( 'Events' ); ?>
+				<?php echo JText::_( 'Event Name' ); ?>
 			</th>
+						<th>
+				<?php echo JText::_( 'Category' ); ?>
+			</th>
+			<th>
+				<?php echo JText::_( 'Abstract' ); ?>
+			</th>
+			<th>
+				<?php echo JText::_( 'Enabled' ); ?>
+			</th>
+
 		</tr>
 	</thead>
 	<?php
-	$k = 0;
-	for ($i=0, $n=count( $this->items ); $i < $n; $i++)	{
-		$row = &$this->items[$i];
-		$checked 	= JHTML::_('grid.id',   $i, $row->id );
-		$link 		= JRoute::_( 'index.php?option=com_events&controller=eventso&task=edit&cid[]='. $row->id );
-		?>
-		<tr class="<?php echo "row$k"; ?>">
-			<td>
-				<?php echo $row->id; ?>
-			</td>
-			<td>
-				<?php echo $checked; ?>
-			</td>
-			<td>
-				<a href="<?php echo $link; ?>"><?php echo $row->greeting; ?></a>
-			</td>
-		</tr>
-		<?php
-		$k = 1 - $k;
-	}
+	$i = 0;
+	$model = $this->getModel('events');
+    $events = $model->eventsList();
+   
+	while($events[$i])
+{?>
+<tr class="">
+<td><?php echo $events[$i]['id'];?></td>
+<td></td>
+<td><?php echo $events[$i]['event_name'];?></td>
+<td><?php echo $events[$i]['event_category'];?></td>
+<td><?php echo $events[$i]['abstract'];?></td>
+<td><?php echo $events[$i]['enable'];?></td>
+</tr>
+<?php
+$i++;
+}	
+	
+	
 	?>
 	</table>
 </div>

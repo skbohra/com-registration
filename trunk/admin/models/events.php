@@ -33,5 +33,14 @@ class eventsModelEvents extends JModel
 
     }
 
+        function eventsList()
+        {
+                $db =& $this->getDBO();
+                $query = "SELECT * FROM ".$db->nameQuote('#__events_names') ;
+                $db->setQuery( $query );
+                $events = $db->loadAssocList();
+                return $events;
+        }
+
 
 }
