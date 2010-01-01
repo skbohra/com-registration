@@ -100,7 +100,7 @@ while($j<$i-1)
 $test2[$j] = $modelEvents->saveInfo($users[$j],$event_name, $team_leader, $team_name, 'email', $members);
 $j++;
 }
-$this->view->assign("message", "Successfuly Registered For the event. An email has been sent to you with team details. For any query please contact registration@sakshama.org. Follow us on twitter for latest updates. http://twitter.com/sakshamagn09");
+$this->view->assign("message", "Successfuly Registered For the event. An email has been sent to you with team details.");
 }
 
 $this->view->display();
