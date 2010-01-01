@@ -79,24 +79,24 @@
 
 
 $mail =& JFactory::getMailer();
-$subject = "Sakshama GN 09:: Event Registration Details";
+$subject = "Event Registration Details";
 $body ="Dear ".$username.",";
 $body = $body."<br />You have been successfully registered for the event: ".$eventname;
 $body = $body."<br />Here are the details:<br />";
 $body = $body."Event Name: ".$eventname."<br />";
 $body = $body. "Team Leader: ".$teamleader."<br />";
 $body = $body. "Total Members: ".$teammembers."<br />";
-$body = $body."We look forward for you active participation in Sakshama GN 09 <br/>";
-$body = $body."Thanks<br/>Web Team Sakshama<br /> www.sakshama.org ";
+$body = $body."We look forward for you active participation in the event. <br/>";
+$body = $body."Thanks<br/>Web Team ";
 
 
 $mail->addRecipient($email);
-$mail->setSender('registration@sakshama.org','Web Team Sakshama');
+$mail->setSender('registration@example.come','Web Team');
 $mail->setSubject( $subject ) ;
 $mail->setBody($body);
 
 
-JUtility::sendMail('registration@sakshama.org','Web Team Sakshama',$email,$subject,$body,'1') or die(":D");
+JUtility::sendMail('registration@example.com','Web Team',$email,$subject,$body,'1') or die(":D");
 
 
 
