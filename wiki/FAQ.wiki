@@ -1,0 +1,9 @@
+Installing Com-Registration.
+
+Requirements:
+Joomla 1.5.x Installed
+Community Builder from http://www.joomlapolis.com/ Installed
+
+Once you have these two installed, you should be able to install this component regularly.
+
+To read on installing components, see http://help.joomla.org/content/view/1685/149/
