@@ -7,3 +7,6 @@ Community Builder from http://www.joomlapolis.com/ Installed
 Once you have these two installed, you should be able to install this component regularly.
 
 To read on installing components, see http://help.joomla.org/content/view/1685/149/
+
+
+You'll want to make some changes to the file comevent\models\events.php and change the messages. Not doing so will result in mails being sent from the Sakshama GN 09 Team from the address registrations@sakshama.org.
